@@ -25,8 +25,10 @@ struct PhotoView: View {
             } else {
                 ProgressView()
                     .onAppear {
-                        viewModel.downloadThumbnail(filename: filename) { downloadedImage in
-                            self.image = downloadedImage
+                        Task {
+                            await viewModel.downloadThumbnail(filename: filename) { downloadedImage in
+                                self.image = downloadedImage
+                            }
                         }
                     }
             }

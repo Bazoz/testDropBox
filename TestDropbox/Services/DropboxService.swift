@@ -7,11 +7,13 @@
 
 import UIKit
 import SwiftyDropbox
+import Alamofire
 
 public class DropboxService {
+    static let shared = DropboxService()
     private let cacheService = ImageCacheService.shared
     
-    public init() {}
+    private init() {}
     
     let destination: (URL, HTTPURLResponse) -> URL = { temporaryURL, response in
         let fileManager = FileManager.default
@@ -21,7 +23,9 @@ public class DropboxService {
         return directoryURL.appendingPathComponent(pathComponent)
     }
     
-    public func downloadFile(filename: String, completion: @escaping (UIImage?, URL?) -> Void) {
+    public func downloadFile(filename: String, completion: @escaping (UIImage?, URL?) -> Void) async {
+        await checkToken()
+        
         DropboxClientsManager.authorizedClient?.files.download(path: "/\(filename)", overwrite: true, destination: destination)
             .response { [weak self] response, error in
                 guard let `self` = self else { return }
@@ -44,7 +48,9 @@ public class DropboxService {
             }
     }
     
-    public func downloadThumbnail(filename: String, completion: @escaping (UIImage?) -> Void) {
+    public func downloadThumbnail(filename: String, completion: @escaping (UIImage?) -> Void) async {
+        await checkToken()
+        
         DropboxClientsManager.authorizedClient?.files.getThumbnail(path: "/\(filename)", format: .png, size: .w256h256, destination: destination)
             .response { [weak self] response, error  in
                 guard let `self` = self else { return }
@@ -59,5 +65,35 @@ public class DropboxService {
                 }
             }
     }
-
+    
+    public func checkToken() async {
+        if DropboxTokenManager.shared.isTokenExpired() {
+            Task {
+                do {
+                    try await refreshToken()
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    
+    public func refreshToken() async throws {
+        let tokenURL = URL(string: "https://api.dropbox.com/oauth2/token")!
+        
+        guard let refreshToken = DropboxTokenManager.shared.getRefreshToken(), !refreshToken.isEmpty else { throw NSError(domain: "Refresh token", code: 1) }
+        
+        var request = try! URLRequest(url: tokenURL, method: .post)
+        request.addValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        let params = "refresh_token=\(refreshToken)&grant_type=refresh_token&client_id=lc2s8lwauex374q&client_secret=6srch7v2yviahx7"
+        
+        
+        request.httpBody = params.data(using: .ascii)
+        let response = try await URLSession.shared.data(for: request)
+        guard let decodedResponse = try? (JSONSerialization.jsonObject(with: response.0) as? [String : Any]), let token = decodedResponse["access_token"] as? String else {
+            throw NSError(domain: "Refresh token", code: 1)
+        }
+        
+        DropboxTokenManager.shared.saveAccessToken(token)
+    }
 }

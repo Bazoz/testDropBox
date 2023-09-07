@@ -536,8 +536,8 @@
             filePath = "TestDropbox/Features/MediaDetails/Views/MediaDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -600,8 +600,8 @@
             filePath = "TestDropbox/Features/MediaDetails/Views/MediaDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -616,42 +616,10 @@
             filePath = "TestDropbox/Features/MediaDetails/Views/MediaDetailView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "body"
             landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "85DCCE7C-B0BB-492B-B2C2-E05780B14FE2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestDropbox/Services/DropboxService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "downloadFile(filename:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CFDAFA47-8FEB-4202-B704-6451EC5D2EA9"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TestDropbox/Services/DropboxService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "downloadFile(filename:completion:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -664,8 +632,8 @@
             filePath = "TestDropbox/Features/MediaList/View Models/MediaListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "processMediaFiles(using:cursor:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -680,42 +648,10 @@
             filePath = "TestDropbox/Features/MediaList/View Models/MediaListViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "addMediaFilesFromResult(from:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "AB077BF3-DD60-42A1-8A0D-ECD1BC93635F - 323790db2fb3c931"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TestDropbox.MediaListViewModel.addMediaFilesFromResult(from: SwiftyDropbox.Files.ListFolderResult) -&gt; ()"
-                  moduleName = "TestDropbox"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yarik/Downloads/TestDropbox%202/TestDropbox/Features/MediaList/View%20Models/MediaListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "87"
-                  endingLineNumber = "87"
-                  offsetFromSymbolStart = "188">
-               </Location>
-               <Location
-                  uuid = "AB077BF3-DD60-42A1-8A0D-ECD1BC93635F - f2ab531626295446"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (SwiftyDropbox.Files.Metadata) -&gt; Swift.Optional&lt;TestDropbox.MediaFile&gt; in TestDropbox.MediaListViewModel.addMediaFilesFromResult(from: SwiftyDropbox.Files.ListFolderResult) -&gt; ()"
-                  moduleName = "TestDropbox"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yarik/Downloads/TestDropbox%202/TestDropbox/Features/MediaList/View%20Models/MediaListViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "88"
-                  endingLineNumber = "88"
-                  offsetFromSymbolStart = "44">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -732,6 +668,209 @@
             endingLineNumber = "17"
             landmarkName = "authenticate()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4075B7E2-F5EA-4A2F-85F4-CC53092ED6E1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestDropbox/Features/MediaList/View Models/MediaListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "processMediaFiles(using:cursor:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4075B7E2-F5EA-4A2F-85F4-CC53092ED6E1 - 5f2435289da6d0cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.CheckedContinuation&lt;(Swift.Optional&lt;SwiftyDropbox.Files.ListFolderResult&gt;, Swift.Optional&lt;Any&gt;), Swift.Error&gt;) -&gt; () in TestDropbox.MediaListViewModel.processMediaFiles(using: SwiftyDropbox.DropboxClient, cursor: Swift.Optional&lt;Swift.String&gt;) async -&gt; ()"
+                  moduleName = "TestDropbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yarik/testDropBox/TestDropbox/Features/MediaList/View%20Models/MediaListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "412">
+               </Location>
+               <Location
+                  uuid = "4075B7E2-F5EA-4A2F-85F4-CC53092ED6E1 - 5597418f9915f469"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;SwiftyDropbox.Files.ListFolderResult&gt;, Swift.Optional&lt;SwiftyDropbox.CallError&lt;SwiftyDropbox.Files.ListFolderContinueError&gt;&gt;) -&gt; () in closure #1 (Swift.CheckedContinuation&lt;(Swift.Optional&lt;SwiftyDropbox.Files.ListFolderResult&gt;, Swift.Optional&lt;Any&gt;), Swift.Error&gt;) -&gt; () in TestDropbox.MediaListViewModel.processMediaFiles(using: SwiftyDropbox.DropboxClient, cursor: Swift.Optional&lt;Swift.String&gt;) async -&gt; ()"
+                  moduleName = "TestDropbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yarik/testDropBox/TestDropbox/Features/MediaList/View%20Models/MediaListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "4075B7E2-F5EA-4A2F-85F4-CC53092ED6E1 - 44cdc9ae39cc6cc0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for TestDropbox.MediaListViewModel.processMediaFiles(using: SwiftyDropbox.DropboxClient, cursor: Swift.Optional&lt;Swift.String&gt;) async -&gt; ()"
+                  moduleName = "TestDropbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yarik/testDropBox/TestDropbox/Features/MediaList/View%20Models/MediaListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "4075B7E2-F5EA-4A2F-85F4-CC53092ED6E1 - 50063db752f758d5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for TestDropbox.MediaListViewModel.processMediaFiles(using: SwiftyDropbox.DropboxClient, cursor: Swift.Optional&lt;Swift.String&gt;) async -&gt; ()"
+                  moduleName = "TestDropbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yarik/testDropBox/TestDropbox/Features/MediaList/View%20Models/MediaListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "4075B7E2-F5EA-4A2F-85F4-CC53092ED6E1 - ac1ffb7b3034a8ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for TestDropbox.MediaListViewModel.processMediaFiles(using: SwiftyDropbox.DropboxClient, cursor: Swift.Optional&lt;Swift.String&gt;) async -&gt; ()"
+                  moduleName = "TestDropbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yarik/testDropBox/TestDropbox/Features/MediaList/View%20Models/MediaListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "4075B7E2-F5EA-4A2F-85F4-CC53092ED6E1 - 4710b77ea2eb86cd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(6) suspend resume partial function for TestDropbox.MediaListViewModel.processMediaFiles(using: SwiftyDropbox.DropboxClient, cursor: Swift.Optional&lt;Swift.String&gt;) async -&gt; ()"
+                  moduleName = "TestDropbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yarik/testDropBox/TestDropbox/Features/MediaList/View%20Models/MediaListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "72">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83824072-755B-49A9-B316-F02B6C4A72F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestDropbox/Features/MediaList/View Models/MediaListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "processMediaFiles(using:cursor:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A805DCE-5C73-4B56-A23F-F7127C9F598F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestDropbox/Features/MediaList/View Models/MediaListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "processMediaFiles(using:cursor:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "95CCC7C7-AE5D-4B79-8BE8-193712800A59"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TestDropbox/Features/MediaList/Views/MediaListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "95CCC7C7-AE5D-4B79-8BE8-193712800A59 - d1b02f7e2ed4230d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in TestDropbox.MediaListView.body.getter : some"
+                  moduleName = "TestDropbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yarik/testDropBox/TestDropbox/Features/MediaList/Views/MediaListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "95CCC7C7-AE5D-4B79-8BE8-193712800A59 - 5318fdedc2ad6a0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in TestDropbox.MediaListView.body.getter : some"
+                  moduleName = "TestDropbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yarik/testDropBox/TestDropbox/Features/MediaList/Views/MediaListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "95CCC7C7-AE5D-4B79-8BE8-193712800A59 - d001f23044af97cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #2 () -&gt; () in TestDropbox.MediaListView.body.getter : some"
+                  moduleName = "TestDropbox"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yarik/testDropBox/TestDropbox/Features/MediaList/Views/MediaListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

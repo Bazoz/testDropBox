@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CE350999541BE6906071CB95 /* Pods_TestDropbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31F30FD134A4573929F036F /* Pods_TestDropbox.framework */; };
 		F870F5EC2A9DC0CD001C456C /* TestDropboxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F870F5EB2A9DC0CD001C456C /* TestDropboxApp.swift */; };
-		F870F5EE2A9DC0CD001C456C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F870F5ED2A9DC0CD001C456C /* ContentView.swift */; };
 		F870F5F02A9DC0CF001C456C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F870F5EF2A9DC0CF001C456C /* Assets.xcassets */; };
 		F870F5F42A9DC0CF001C456C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F870F5F32A9DC0CF001C456C /* Preview Assets.xcassets */; };
 		F870F6082A9DC0CF001C456C /* TestDropboxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F870F6072A9DC0CF001C456C /* TestDropboxUITests.swift */; };
@@ -29,6 +28,7 @@
 		F870F6422A9E8F97001C456C /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F870F6412A9E8F97001C456C /* PhotoView.swift */; };
 		F88082E02AA625B4006F1522 /* ImageCacheServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88082DF2AA625B4006F1522 /* ImageCacheServiceTests.swift */; };
 		F88082E42AA63E1A006F1522 /* DropboxServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88082E32AA63E1A006F1522 /* DropboxServiceTests.swift */; };
+		F88082E62AAA1580006F1522 /* DropboxTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88082E52AAA1580006F1522 /* DropboxTokenManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,6 @@
 		F82A6D2F216E4E606324ACF1 /* Pods-TestDropbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDropbox.debug.xcconfig"; path = "Target Support Files/Pods-TestDropbox/Pods-TestDropbox.debug.xcconfig"; sourceTree = "<group>"; };
 		F870F5E82A9DC0CD001C456C /* TestDropbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDropbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F870F5EB2A9DC0CD001C456C /* TestDropboxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDropboxApp.swift; sourceTree = "<group>"; };
-		F870F5ED2A9DC0CD001C456C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F870F5EF2A9DC0CF001C456C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F870F5F12A9DC0CF001C456C /* TestDropbox.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestDropbox.entitlements; sourceTree = "<group>"; };
 		F870F5F32A9DC0CF001C456C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		F870F6412A9E8F97001C456C /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		F88082DF2AA625B4006F1522 /* ImageCacheServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheServiceTests.swift; sourceTree = "<group>"; };
 		F88082E32AA63E1A006F1522 /* DropboxServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxServiceTests.swift; sourceTree = "<group>"; };
+		F88082E52AAA1580006F1522 /* DropboxTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxTokenManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +152,6 @@
 				F870F6322A9DEE39001C456C /* Utils */,
 				F870F62D2A9DEE01001C456C /* Services */,
 				F870F5EB2A9DC0CD001C456C /* TestDropboxApp.swift */,
-				F870F5ED2A9DC0CD001C456C /* ContentView.swift */,
 				F870F5EF2A9DC0CF001C456C /* Assets.xcassets */,
 				F870F5F12A9DC0CF001C456C /* TestDropbox.entitlements */,
 				F870F6372A9E0CFA001C456C /* Info.plist */,
@@ -192,6 +191,7 @@
 			children = (
 				F870F62E2A9DEE13001C456C /* DropboxService.swift */,
 				F870F6302A9DEE27001C456C /* ImageCacheService.swift */,
+				F88082E52AAA1580006F1522 /* DropboxTokenManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -478,7 +478,6 @@
 				F870F6312A9DEE27001C456C /* ImageCacheService.swift in Sources */,
 				F870F61F2A9DEC97001C456C /* AuthenticationViewModel.swift in Sources */,
 				F870F6282A9DED5A001C456C /* MediaListView.swift in Sources */,
-				F870F5EE2A9DC0CD001C456C /* ContentView.swift in Sources */,
 				F870F5EC2A9DC0CD001C456C /* TestDropboxApp.swift in Sources */,
 				F870F6342A9DEEAB001C456C /* Constants.swift in Sources */,
 				F870F61A2A9DEC47001C456C /* MediaFile.swift in Sources */,
@@ -489,6 +488,7 @@
 				F870F6232A9DECD2001C456C /* MediaDetailViewModel.swift in Sources */,
 				F870F6262A9DED44001C456C /* AuthenticationView.swift in Sources */,
 				F870F6402A9E8F41001C456C /* PhotoViewModel.swift in Sources */,
+				F88082E62AAA1580006F1522 /* DropboxTokenManager.swift in Sources */,
 				F870F6212A9DECB2001C456C /* MediaListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,7 +10,7 @@ import SwiftyDropbox
 
 class MediaDetailViewModel: ObservableObject {
     @Published var selectedMedia: MediaFile?
-    private var dropboxService = DropboxService()
+    private var dropboxService = DropboxService.shared
     private let cacheService = ImageCacheService.shared
     
     func getCachedImage(for filename: String) -> UIImage? {
@@ -21,8 +21,8 @@ class MediaDetailViewModel: ObservableObject {
         return cacheService.getCachedVideoURL(for: filename)
     }
     
-    func downloadFile(filename: String, completion: @escaping (UIImage?, URL?) -> Void) {
-        dropboxService.downloadFile(filename: filename) { (image, videoURL) in
+    func downloadFile(filename: String, completion: @escaping (UIImage?, URL?) -> Void) async {
+        await dropboxService.downloadFile(filename: filename) { (image, videoURL) in
             DispatchQueue.main.async {
                 completion(image, videoURL)
             }

@@ -30,9 +30,11 @@ struct MediaDetailView: View {
                     } else {
                         ProgressView()
                             .onAppear {
-                                viewModel.downloadFile(filename: file.name) { downloadedImage, _ in
-                                    if let downloadedImage = downloadedImage {
-                                        self.image = downloadedImage
+                                Task {
+                                    await viewModel.downloadFile(filename: file.name) { downloadedImage, _ in
+                                        if let downloadedImage = downloadedImage {
+                                            self.image = downloadedImage
+                                        }
                                     }
                                 }
                             }
@@ -49,11 +51,13 @@ struct MediaDetailView: View {
                     } else {
                         ProgressView()
                             .onAppear {
-                                viewModel.downloadFile(filename: file.name, completion: { _, urlVideo in
-                                    if let urlVideo = urlVideo, let videoData = try? Data(contentsOf: urlVideo), let playerItem = getPlayer(videoData: videoData) {
-                                        player = playerItem
-                                    }
-                                })
+                                Task{
+                                    await viewModel.downloadFile(filename: file.name, completion: { _, urlVideo in
+                                        if let urlVideo = urlVideo, let videoData = try? Data(contentsOf: urlVideo), let playerItem = getPlayer(videoData: videoData) {
+                                            player = playerItem
+                                        }
+                                    })
+                                }
                             }
                     }
                 }

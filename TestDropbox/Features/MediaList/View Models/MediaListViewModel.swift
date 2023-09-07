@@ -28,6 +28,9 @@ final class MediaListViewModel: ObservableObject {
     @MainActor
     func loadMediaFiles() async {
         reset()
+       
+        await DropboxService.shared.checkToken()
+        
         guard let client = DropboxClientsManager.authorizedClient else { return }
         
         _viewState = .loading
@@ -39,6 +42,9 @@ final class MediaListViewModel: ObservableObject {
     
     @MainActor
     func fetchNextSetOfFiles() async {
+        
+        await DropboxService.shared.checkToken()
+        
         guard let cursor = _cursor, let client = DropboxClientsManager.authorizedClient, !_isLastItem else { return }
         
         _viewState = .fetching
